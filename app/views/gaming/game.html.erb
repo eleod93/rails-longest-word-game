@@ -1,0 +1,19 @@
+<h1> Welcome to the longest word-game !</h1>
+<h4>Here is your grid :</h4>
+<%= @grid.join(" ") %>
+
+<h4>What's your best shot?</h1>
+
+<form action="/score" method="game">
+  <label for="answer">Your answer</label>
+  <input type="text" name="answer">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="submit" value="Go on!">
+</form>
+
+
+
+
+
+
